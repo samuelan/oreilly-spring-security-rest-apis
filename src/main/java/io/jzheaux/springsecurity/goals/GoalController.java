@@ -1,5 +1,6 @@
 package io.jzheaux.springsecurity.goals;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,8 +38,8 @@ public class GoalController {
 	}
 
 	@PostMapping("/goal")
-	public Goal make(@RequestBody String text) {
-		String owner = "user";
+	public Goal make(Authentication authentication, @RequestBody String text) {
+		String owner = authentication.getName();
 		Goal goal = new Goal(text, owner);
 		return this.goals.save(goal);
 	}

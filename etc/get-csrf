@@ -9,3 +9,4 @@ while IFS=':' read key value; do
                 ;;
      esac
 done < <(http --print=h --session=./session.json -a user:password :8080/goals)
+#done < <(http  --verify=no --print=h --session=./session.json -a user:password :8443/goals)

@@ -1,9 +1,23 @@
 logging:
   level:
-    org.springframework.security: TRACE
+    org.springframework.security: debug
 
 spring:
   jpa:
     properties:
       hibernate:
         enable_lazy_load_no_trans: true
+
+security.enable-csrf: false
+
+server:
+  port: 8080
+
+#server:
+#  ssl:
+#    key-store: classpath:springboot.p12
+#    key-store-password: password
+#    key-store-type: pkcs12
+#    key-alias: springboot
+#    key-password: password
+#  port: 8443
