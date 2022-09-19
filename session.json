@@ -1,0 +1,31 @@
+{
+    "__meta__": {
+        "about": "HTTPie session file",
+        "help": "https://httpie.io/docs#sessions",
+        "httpie": "3.2.1"
+    },
+    "auth": {
+        "raw_auth": "user:password",
+        "type": "basic"
+    },
+    "cookies": [
+        {
+            "domain": "localhost.local",
+            "expires": null,
+            "name": "JSESSIONID",
+            "path": "/",
+            "secure": false,
+            "value": "94FFC27A8A2854973AB63F61523964A6"
+        }
+    ],
+    "headers": [
+        {
+            "name": "Accept",
+            "value": "application/json"
+        },
+        {
+            "name": "X-CSRF-TOKEN",
+            "value": "b5ba5c77-84d7-4106-a0b2-c36b55de8fc8"
+        }
+    ]
+}
